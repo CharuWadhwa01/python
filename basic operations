@@ -1,0 +1,21 @@
+
+def arithmetic_operations(a, b):
+    addition = a + b
+    subtraction = a - b
+    multiplication = a * b
+    division = a / b if b != 0 else "Cannot divide by zero"
+
+    return addition, subtraction, multiplication, division
+
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+
+add, sub, mul, div = arithmetic_operations(num1, num2)
+
+
+print(f"Addition: {add}")
+print(f"Subtraction: {sub}")
+print(f"Multiplication: {mul}")
+print(f"Division: {div}")
