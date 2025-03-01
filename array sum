@@ -1,0 +1,6 @@
+def array_sum(arr):
+    return sum(arr)
+
+numbers = [1, 2, 3, 4, 5]
+result = array_sum(numbers)
+print("Sum of the array:", result)
