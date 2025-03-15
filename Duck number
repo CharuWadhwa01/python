@@ -1,0 +1,10 @@
+def is_duck_number(num):
+    num_str = str(num)
+    if num_str[0] == '0':
+        return False
+    return '0' in num_str
+num = int(input("Enter a number: "))
+if is_duck_number(num):
+    print(f"{num} is a Duck Number.")
+else:
+    print(f"{num} is NOT a Duck Number.")
