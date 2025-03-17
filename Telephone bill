@@ -1,0 +1,24 @@
+def calculate_telephone_bill(call_type, duration):
+    service_charge = 10  
+    tax_rate = 0.05 
+
+    if call_type.lower() == "local":
+        rate_per_minute = 0.5 
+    elif call_type.lower() == "international":
+        rate_per_minute = 2.0 
+    else:
+        print("Invalid call type. Please enter 'local' or 'international'.")
+        return None
+
+    call_cost = duration * rate_per_minute
+    total_cost = call_cost + service_charge
+    total_cost_with_tax = total_cost + (total_cost * tax_rate)
+
+    return total_cost_with_tax
+call_type = input("Enter call type (local/international): ").strip()
+duration = float(input("Enter call duration in minutes: "))
+
+bill_amount = calculate_telephone_bill(call_type, duration)
+
+if bill_amount:
+    print(f"Total Telephone Bill: {bill_amount:.2f} currency units")
