@@ -1,0 +1,10 @@
+import re
+
+def has_special_characters(value):
+    return bool(re.search(r'[^a-zA-Z0-9]', value))
+
+print(has_special_characters("Hello123"))     
+print(has_special_characters("Hello@123"))   
+print(has_special_characters("!@#$%^"))       
+print(has_special_characters("NoSpecials"))   
+print(has_special_characters("Space here"))  
