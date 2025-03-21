@@ -1,0 +1,3 @@
+ascii_number = 65  
+character = chr(ascii_number)
+print(f"The character for ASCII {ascii_number} is '{character}'")
